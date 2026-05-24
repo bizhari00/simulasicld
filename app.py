@@ -1,6 +1,4 @@
-Berikut adalah pembaruan kode lengkap (full script). Saya telah menghapus bagian rendering teks dinamis (fig.add_scatter) pada Bagian 6 sehingga animasi live hanya menampilkan bentuk penanda (overlay shapes) merah pastel yang lembut di atas gambar diagram dasar tanpa memunculkan label teks tambahan di luar gambar.
 
-Python
 import streamlit as st
 import plotly.express as px
 from PIL import Image
