@@ -80,7 +80,7 @@ col_btn, col_title = st.columns([1.2, 2.8])
 with col_btn:
     st.link_button("🏠 ke Menu Utama", "https://forio.com/app/univ_sumaterautara/research-ptpn", use_container_width=False)
 with col_title:
-    st.markdown('<p class="custom-title">Model Analisis Ketahanan Energi & Pangan (Live Animasi Akumulatif Lengkap)</p>', unsafe_allow_html=True)
+    st.markdown('<p class="custom-title">Causal Loop Diagram Ketahanan Energi & Pangan </p>', unsafe_allow_html=True)
 
 st.divider()
 
