@@ -1,4 +1,3 @@
-
 import streamlit as st
 import plotly.express as px
 from PIL import Image
@@ -180,7 +179,7 @@ process_phases = [
 ]
 
 # ==============================================================================
-# 6. LOOPING RENDERING (WARNA LEMBUT, TANPA BORDER & TANPA LABEL LABEL TEKS)
+# 6. LOOPING RENDERING (WARNA EMAS LEMBUT, TANPA BORDER & TANPA LABEL LABEL TEKS)
 # ==============================================================================
 placeholder = st.empty()
 render_count = 0
@@ -204,17 +203,17 @@ while True:
                 fig.add_shape(
                     type="path",
                     path=f"M {x_mid},{area[1]} L {area[2]},{y_mid} L {x_mid},{area[3]} L {area[0]},{y_mid} Z",
-                    fillcolor="rgba(239, 68, 68, 0.4)",  # Merah pastel lembut
+                    fillcolor="rgba(239, 68, 68, 0.4)",  # Merah pastel lembut khusus penanda masalah/GAP
                     line=dict(width=0),                  # Tanpa border
                 )
             else:
-                # Bentuk Kotak Standar untuk komponen non-GAP
+                # Bentuk Kotak Standar diselaraskan ke warna Emas Matte Pastel Lembut
                 shape = component.get('shape_type', 'rect')
                 fig.add_shape(
                     type=shape, 
                     x0=area[0], y0=area[1], x1=area[2], y1=area[3],
-                    fillcolor="rgba(239, 68, 68, 0.4)",  # Merah pastel lembut
-                    line=dict(width=0),                  # Tanpa border
+                    fillcolor="rgba(212, 175, 55, 0.35)",  # Diubah menjadi Emas Matte Pastel Lembut (Sama dengan PKS)
+                    line=dict(width=0),                    # Tanpa border
                 )
         
         fig.update_layout(
